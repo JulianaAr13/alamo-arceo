@@ -109,7 +109,7 @@ li.menu__item a:hover{
     padding: 5px;
     width: 100%;
     height: 50px;
-    background-color: cadetblue;
+    background-image: linear-gradient(to bottom, cadetblue , cadetblue , lightgrey);
     font-family:Verdana,sans-serif;
 }
 
@@ -164,6 +164,14 @@ li.menu__item a:hover{
     transform: translate(-50%,0%);
     border-radius: 15px;
     padding: 10px;
+}
+
+.img-hover{
+    transition: widht 2s;
+}
+
+.img-hover :hover{
+    width: 80%;
 }
 
 .como-comprar, .nuestros-productos, .bolsones{ 
