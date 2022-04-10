@@ -30,7 +30,7 @@
 
 
 body{
-    background-color: white;
+    background-color:white;
 }
 
 .logo img{
@@ -172,6 +172,12 @@ li.menu__item a:hover{
 
 .img-hover :hover{
     width: 80%;
+}
+
+.bolsones-img{
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%,0%);
 }
 
 .como-comprar, .nuestros-productos, .bolsones{ 
@@ -320,7 +326,7 @@ textarea {
     resize: none;
 }
 
-.conteiner-columnas{
+.container-columnas{
     width: 100%;
 }
 
