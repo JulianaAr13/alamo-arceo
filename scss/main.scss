@@ -1,0 +1,262 @@
+@import "../partials/variables";
+
+#grid-cointeiner-index{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+ header {
+    grid-area: header;
+ }
+
+ nav {
+    grid-area: nav;
+ }
+
+
+ main{
+     grid-area: main;
+ }
+ footer {
+    grid-area: footer;
+ }
+
+
+body{
+    background-color:$background-color;
+}
+
+.logo img{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 50%;
+    width: 15%;
+    transform: translate(-50%,0%);
+   }
+
+
+.menu__logo img{
+    max-width: 50px;
+    display: none;
+}
+ul.menu{
+    list-style: none;
+    font-size: 0;
+    padding: 0;
+    li.menu__item{
+        display: inline-block;
+        position: relative;
+        & a{
+        font-size: $fs-base;
+        text-align: center;
+        display: block;
+        color: $text-inverted-color;
+        background-color: $primary-color;
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family:$font-family-secundaria;
+        }
+    & a:hover{
+            background-color: $primary-darker-color;
+        }
+    }
+    
+}
+
+.col-m{
+    width: 20%;
+}
+
+.imagenprincipal img{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    width:50%;
+    transform: translate(-50%,0%);
+    padding: 10px;
+}
+
+.info-principal-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin:30px 30px;
+    & p{
+        font-size: $fs-mediana;
+        border: solid 3px $primary-darker-color;
+        padding: 20px;
+        text-align: center;
+        font-family:$font-family-principal;
+        margin: 30px;
+    }
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, $primary-color , $primary-color , $background-darker-color);
+    font-family:$font-family-principal;
+}
+
+.redes-footer{
+    display: flex;
+    width: 200px;
+    align-items: center
+}
+
+.mail-footer{
+    display: flex;
+    width: 200px;
+    align-items:center;
+    justify-content: end;
+}
+
+.imagen-footer img{
+    max-height: 40px;
+    padding: 5px;
+}
+
+.copy{
+    display: inline-block;
+    position: relative;
+    font-family:$font-family-principal;
+    text-align: center;
+    width: 200px;
+    color: $text-inverted-color;
+}
+
+.mail{
+    display: inline-block;
+    width: 500px;
+    font-family:$font-family-principal;
+    text-align:right;
+    color: $text-inverted-color; 
+    & img{
+    width: 10%;
+    }
+    & p{
+    display: inline-block;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .imagenprincipal img{
+       max-width: 650px; 
+    }
+
+    .info-principal-flex p{
+        font-size: 16px;
+        border: solid 1px darkcyan;
+        padding: 20px;
+        text-align: center;
+        font-family:$font-family-principal;
+        margin: 0px;
+    }
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+    }
+    .redes-footer{
+        display: flex;
+        width: 200px;
+        justify-content: center;
+    }
+    
+    .mail-footer{
+        display: flex;
+        width: 200px;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    .grid-form-s{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 10px;
+    }
+
+    .grid-productos-s{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .nuestros-productos img{
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        width: 40%;
+        transform: translate(-50%,0%);
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .bolsones-img{
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+}
