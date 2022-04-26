@@ -1,5 +1,10 @@
 @import "../partials/variables";
 
+@mixin position($left, $width){
+    left:$left;
+    width: $width;
+}
+
 #grid-cointeiner-index{
     display: grid;
     grid-template-areas:
@@ -34,8 +39,7 @@ body{
     display: inline-block;
     position: relative;
     top: 0;
-    left: 50%;
-    width: 15%;
+    @include position(50%,15%)
     transform: translate(-50%,0%);
    }
 
@@ -52,7 +56,7 @@ ul.menu{
         display: inline-block;
         position: relative;
         & a{
-        font-size: $fs-base;
+        font-size: map-get($font-sizes,"base");
         text-align: center;
         display: block;
         color: $text-inverted-color;
@@ -76,8 +80,7 @@ ul.menu{
 .imagenprincipal img{
     display: inline-block;
     position: relative;
-    left: 50%;
-    width:50%;
+    @include position(50%,50%)
     transform: translate(-50%,0%);
     padding: 10px;
 }
@@ -89,7 +92,7 @@ ul.menu{
     align-items: center;
     margin:30px 30px;
     & p{
-        font-size: $fs-mediana;
+        font-size: map-get($font-sizes,"mediana");
         border: solid 3px $primary-darker-color;
         padding: 20px;
         text-align: center;
@@ -118,9 +121,7 @@ ul.menu{
 }
 
 .mail-footer{
-    display: flex;
-    width: 200px;
-    align-items:center;
+    @extend .redes-footer;
     justify-content: end;
 }
 
@@ -158,7 +159,7 @@ ul.menu{
     }
 
     .info-principal-flex p{
-        font-size: 16px;
+        font-size:map-get($font-sizes,"base");
         border: solid 1px darkcyan;
         padding: 20px;
         text-align: center;
@@ -248,15 +249,13 @@ ul.menu{
     .nuestros-productos img{
         display: inline-block;
         position: relative;
-        left: 50%;
-        width: 40%;
+        @include position(50%,40%)
         transform: translate(-50%,0%);
         border-radius: 15px;
         padding: 10px;
     }
     .bolsones-img{
-        width: 70%;
-        left: 50%;
+        @include position(70%,50%)
         transform: translate(-50%,0%);
     }
 }

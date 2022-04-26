@@ -86,15 +86,12 @@ ul.menu {
   background-image: linear-gradient(to bottom, cadetblue, cadetblue, lightgrey);
   font-family: Verdana, sans-serif; }
 
-.redes-footer {
+.redes-footer, .mail-footer {
   display: flex;
   width: 200px;
   align-items: center; }
 
 .mail-footer {
-  display: flex;
-  width: 200px;
-  align-items: center;
   justify-content: end; }
 
 .imagen-footer img {
@@ -135,7 +132,7 @@ ul.menu {
     flex-direction: column;
     height: 150px;
     justify-content: center; }
-  .redes-footer {
+  .redes-footer, .mail-footer {
     display: flex;
     width: 200px;
     justify-content: center; }
@@ -186,6 +183,6 @@ ul.menu {
     border-radius: 15px;
     padding: 10px; }
   .bolsones-img {
-    width: 70%;
-    left: 50%;
+    left: 70%;
+    width: 50%;
     transform: translate(-50%, 0%); } }
