@@ -1,6 +1,9 @@
 #grid-cointeiner-index {
   display: grid;
-  grid-template-areas: "header" "nav" "main" "footer"; }
+  grid-template-areas: "header"
+ "nav"
+ "main"
+ "footer"; }
 
 header {
   grid-area: header; }
