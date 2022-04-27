@@ -1,4 +1,4 @@
-@import "../partials/variables";
+@import "./partials/variables";
 
 @mixin position($left, $width){
     left:$left;
@@ -39,7 +39,7 @@ body{
     display: inline-block;
     position: relative;
     top: 0;
-    @include position(50%,15%)
+    @include position(50%,15%);
     transform: translate(-50%,0%);
    }
 
@@ -80,7 +80,7 @@ ul.menu{
 .imagenprincipal img{
     display: inline-block;
     position: relative;
-    @include position(50%,50%)
+    @include position(50%,50%);
     transform: translate(-50%,0%);
     padding: 10px;
 }
@@ -249,13 +249,13 @@ ul.menu{
     .nuestros-productos img{
         display: inline-block;
         position: relative;
-        @include position(50%,40%)
+        @include position(50%,40%);
         transform: translate(-50%,0%);
         border-radius: 15px;
         padding: 10px;
     }
     .bolsones-img{
-        @include position(70%,50%)
+        @include position(70%,50%);
         transform: translate(-50%,0%);
     }
 }
